@@ -3,7 +3,7 @@ title: "BioNTechとファイザーのSARS-CoV-2ワクチンのソースコード
 date: 2020-12-25T20:12:20+01:00
 draft: false
 images:
- - bnt162b2.png
+ - https://berthub.eu/articles/bnt162b2.png
 ---
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@powerdns_bert">
