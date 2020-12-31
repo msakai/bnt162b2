@@ -27,6 +27,8 @@ images:
 / [Português](https://docs.google.com/document/d/1pDo40DXcpXjzqAUfhFfup50-IQ2Qct-mhLnmRpjFZWM/edit).
 / [Markdown for translating](https://raw.githubusercontent.com/berthubert/bnt162b2/master/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine.md)
 
+*この記事は bert hubert 氏による記事 [Reverse Engineering the source code of the BioNTech/Pfizer SARS-CoV-2 Vaccine](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/) の日本語訳です。*
+
 ようこそ!　この記事ではBioNTechとファイザーのSARS-CoV-2向けmRNAワクチン(メッセンジャーRNAワクチン)のソースコードを一文字づつ見ていきます。
 
 > *この記事の読みやすさと正確さの確認のために時間を割いてもらった多くの人々に感謝します。
