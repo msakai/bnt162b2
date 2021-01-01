@@ -23,7 +23,7 @@
 <meta property='og:site_name' content='Articles'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://berthub.eu/articles/bnt162b2.png'><meta property='article:section' content=''><meta property='article:published_time' content='2020-12-25T20:12:20&#43;01:00'/><meta property='article:modified_time' content='2020-12-25T20:12:20&#43;01:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.79.1" />
+<meta name="generator" content="Hugo 0.80.0" />
 
   <title>BioNTechとファイザーのSARS-CoV-2ワクチンのソースコードのリバースエンジニアリング • Articles</title>
   <link rel='canonical' href='https://msakai.github.io/bnt162b2/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine.ja/'>
@@ -151,7 +151,7 @@
 <p>DNAプリンタの出力は少量のDNAで、その後に多くの生物的・化学的な処理を経ることでワクチンのアンプルに収まっているRNAになります（RNAについては後で詳しく説明します）。
 30マイクログラムの用量には実際に30マイクログラムのRNAが含まれています。
 さらに、このmRNAを我々の細胞の中に運ぶためには、脂質による巧妙なパッケージングが用いられています。</p>
-<p>RNAはは、揮発性の「作業メモリー」版のDNAです。
+<p>RNAは、揮発性の「作業メモリー」版のDNAです。
 DNAは生物学におけるフラッシュメモリのようなもので、永続性と内部的な冗長性があり、またとても信頼性が高いのです。
 しかし、計算機と同様、フラッシュメモリ上のコードを直接実行することはなく、その前により高速で融通が効き、代わりに壊れやすいようなシステムへとコードを複製します。</p>
 <p>計算機の場合にはそれはRAMで、生物の場合にはそれはRNAです。
@@ -273,7 +273,7 @@ mRNAワクチンは人間の体内で急速に劣化するので、Ψに置き�
 （WHOの資料によれば）過去数年で科学者たちはこの非翻訳領域を更に最適化する方法を見つけており、したがってこれはαグロビンの非翻訳領域そのものではなく、より改良されたものです。</p>
 <h2 id="s糖タンパク質シグナルペプチド">S糖タンパク質シグナルペプチド</h2>
 <p>先に述べたように、ワクチンのゴールは細胞にSARS-CoV-2のスパイクタンパク質を大量に作らせることです。
-これまでに、ワクチンのソースコード中の主にメタデータや「呼び出し規約」にい関わる部分を見てきましたが、今度はウイルス性のタンパク質の領域を見ていきましょう。</p>
+これまでに、ワクチンのソースコード中の主にメタデータや「呼び出し規約」に関わる部分を見てきましたが、今度はウイルス性のタンパク質の領域を見ていきましょう。</p>
 <p>ですが、見るべきメタデータの層がまだ一層残っています。
 リボソームが（上の素晴らしいアニメーションのように）タンパク質を作ったあと、そのタンパク質はどこかに運ばれる必要があります。
 この情報は「S糖タンパク質シグナルペプチド（拡張リーダー配列）」(S glycoprotein signal peptide (extended leader sequence))に符号化されています。</p>
