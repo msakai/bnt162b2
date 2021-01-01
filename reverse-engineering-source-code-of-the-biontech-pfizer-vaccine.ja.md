@@ -139,11 +139,11 @@ WHOのドキュメントには便利な図があります:
 GA
 ```
 
-これは [DOS や Windows の実行ファイルが MZ から始まり](https://en.wikipedia.org/wiki/DOS_MZ_executable)、UNIXのスクリプトが [`#!`](https://en.wikipedia.org/wiki/Shebang_(Unix)) から始まるのに対応しています。
+これは [DOS や Windows の実行ファイルが MZ から始まり](https://ja.wikipedia.org/wiki/DOS_MZ_executable)、UNIXのスクリプトが [`#!`](https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%90%E3%83%B3_(Unix)) から始まるのに対応しています。
 生命の場合でもオペレーティングシステムの場合でも、これらの二文字はいかなる意味でも実行されることはありません。
 しかし、それがないと何も起こらないため、そこに存在しなくてはならないのです。
 
-mRNAのcap[は多くの機能を持っています](https://en.wikipedia.org/wiki/Five-prime_cap#Function)。
+mRNAのcap[は多くの機能を持っています](https://ja.wikipedia.org/wiki/5%27%E3%82%AD%E3%83%A3%E3%83%83%E3%83%97#%E6%A9%9F%E8%83%BD)。
 第一に細胞核から来たコードをマーキングします。
 今回の場合、コードは細胞核から来たものではなく、ワクチン接種によってもたらされたものです。
 しかし、細胞にそのことを伝える必要はありません。
@@ -318,7 +318,7 @@ KとVで表されるアミノ酸が両方ともプロリン (Proline) を表すP
 SARS-CoV-2の実際の粒子を見ると、たくさんのトゲ状になっているスパイクタンパク質が見えます:
 
 <center>
-{{< figure src="https://berthub.eu/articles/sars-em.jpg" caption="[SARSウイルスの粒子](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus) (Wikipedia)" >}}
+{{< figure src="https://berthub.eu/articles/sars-em.jpg" caption="[SARSウイルスの粒子](https://ja.wikipedia.org/wiki/SARS%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9) (Wikipedia)" >}}
 </center>
 
 これらのスパイクはウイルス本体（「ヌクレオカプシドタンパク質」）に固定されています。
@@ -362,9 +362,10 @@ SARS-CoV-2の実際の粒子を見ると、たくさんのトゲ状になって�
 ----------------------------
 リボソームが5'末端で「導線」(lead-in)として5'非翻訳領域を必要としていたように、タンパク質のコーディング領域の終わりには3'（スリー・プライム）非翻訳領域 と呼ばれる同様の機構があります。
 
-3'非翻訳領域については、長々と説明することも出来ますが、ここではその代わりに[Wikipediaの説明](https://en.wikipedia.org/wiki/Three_prime_untranslated_region)を引用しておきましょう:
-3'非翻訳領域は、mRNAの「局所化」「安定化」「核外輸送」「翻訳後」に影響を与えることにより、遺伝子発現において重要な役割を果たします。
+3'非翻訳領域については、長々と説明することも出来ますが、ここではその代わりに[英語版Wikipediaの説明](https://en.wikipedia.org/wiki/Three_prime_untranslated_region)を引用しておきましょう:
+3'非翻訳領域は、mRNAの「局所化」「安定化」「核外輸送」「翻訳効率」に影響を与えることにより、遺伝子発現において重要な役割を果たします。
 …… **3'非翻訳領域については現在ある程度分かってはいるものの、比較的謎の部分も多い**。
+（訳注：[日本語版Wikipedia](https://ja.wikipedia.org/wiki/3%27_%E9%9D%9E%E7%BF%BB%E8%A8%B3%E9%A0%98%E5%9F%9F)）
 
 分かっていることは、ある種の3'非翻訳領域はタンパク質の発現の促進に非常に成功していることです。
 WHOのドキュメントによれば、BioNTechとファイザーのワクチンの3'非翻訳領域は、「RNAの安定性と高いタンパク質発現量を実現するために、AES（amino-terminal enhancer of split） mRNA とミトコンドリアの12SリボソームRNA（the mitochondrial encoded 12S ribosomal RNA）から取った」とのこと。
