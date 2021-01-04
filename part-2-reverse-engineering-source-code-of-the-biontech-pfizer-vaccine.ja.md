@@ -65,61 +65,51 @@ BioNTech
 
 この記事では幾つか疑問が残っていましたが、それこそが面白く、以降で取り上げる点です。
 
-The codon optimization
+コドン最適化
 ----------------------
-The vaccine contains RNA code for a very *slightly* modified copy of the
-SARS-CoV-2 S protein.
+ワクチンは SARS-CoV-2 のSプロテインを*微妙に*変更したタンパク質を生成するRNAコードを含んでいます。
 
-The RNA code of the vaccine itself however is *highly* modified from the viral original!
-This has been done by the manufacturer, based on their understanding of
-nature. 
+しかし、ワクチンのRNAコードそれ自体は、ウイルスの元のRNAコードから*大幅に*変更されています。
+これは、ワクチン製造者が自然についての理解に基づいて行った変更です。
 
-And from what we understand, these modifications make the vaccine **much
-much more** effective.  It would be a lot of fun to understand these
-modifications.  It might for example explain why the Moderna vaccine needs
-100 micrograms and the BioNTech vaccine only 30 micrograms.
+そして、我々の理解では、この変更はワクチンの有効性を*極めて大幅に*向上しています。
+この変更を理解することはきっと面白いはずで、例えばそこからモデルナのワクチンには100マイクログラム必要な一方でBioNTechのワクチンには30マイクログラムで十分な理由などが分かるかも知れません。
 
-Here is the beginning of the S protein in both the virus and the BNT162b2
-vaccine RNA code.  Exclamation marks denote differences.
+以下は、ウイルスとBNT162b2ワクチンのRNAコードそれぞれのSタンパク質に関する部分の初めです。
+違いのある箇所は感嘆符（！）で示しています。
 
 ```
-Virus:   AUG UUU GUU UUU CUU GUU UUA UUG CCA CUA GUC UCU AGU CAG UGU GUU
-Vaccine: AUG UUC GUG UUC CUG GUG CUG CUG CCU CUG GUG UCC AGC CAG UGU GUU
+ウイルス: AUG UUU GUU UUU CUU GUU UUA UUG CCA CUA GUC UCU AGU CAG UGU GUU
+ワクチン: AUG UUC GUG UUC CUG GUG CUG CUG CCU CUG GUG UCC AGC CAG UGU GUU
                !   !   !   !   ! ! ! !     !   !   !   !   !            
 ```
 
-RNA is a string (literally) of RNA characters, `A`, `C`, `G` and `U`. There is no
-physical framing on there, but it makes sense to analyse it in groups of
-three.
+RNAは文字 A, T, G, U からなる（文字通りの）文字列です。
+物理的な区切りがあるわけではないですが、3文字ごとにグループ化して分析するのが合理的です。
 
-Each group (called a codon) maps to an amino acid (denoted by a capital
-letter).  A string of amino acids is a protein.  Here is what that looks
-like:
+グループ化されたそれぞれはコドンと呼ばれ、アミノ酸に対応しています。
+以下ではアミノ酸を大文字で表しており、アミノ酸の列がタンパク質です。
+例えばこんな風に対応しています:
 
 ```
-Virus:   AUG UUU GUU UUU CUU GUU UUA UUG CCA CUA GUC UCU AGU CAG UGU GUU
+ウイルス: AUG UUU GUU UUU CUU GUU UUA UUG CCA CUA GUC UCU AGU CAG UGU GUU
           M   F   V   F   L   V   L   L   P   L   V   S   S   Q   C   V
-Vaccine: AUG UUC GUG UUC CUG GUG CUG CUG CCU CUG GUG UCC AGC CAG UGU GUU
+ワクチン: AUG UUC GUG UUC CUG GUG CUG CUG CCU CUG GUG UCC AGC CAG UGU GUU
                !   !   !   !   ! ! ! !     !   !   !   !   !            
 ```
 
-Here we can see that while the codons are different, the amino acid version
-is the same. There are 4*4*4 codons but only 20 amino acids. This means you
-can typically change every codon into one of two others, and still code for
-the same amino acid.
+比較してみると、それぞれのコドンは異なっているものの、アミノ酸の方は同一になっていることが分かります。
+コドンには 4*4*4 種類がありますが、アミノ酸は20種類しかありません。
+つまり、典型的には、あるコドンに対して同じアミノ酸を符号化しているコドンが2つあります。
 
-So in the second codon, `UUU` was changed to `UUC`. This is a net addition
-of one 'C' to the vaccine. The third codon changed from `GUU` to `GUG`, which is
-a net addition of one `G`.
+二番目のコドンでは `UUU` が `UUC` に変更されていますが、それによりトータルではワクチンのCが一つ増えています。
+三番目のコドンでは `GUU` が `GUG` に変更されていて、同様にGが一つ増えています。
 
-**It is known that a higher fraction of `G` and `C` characters improves the
-efficiency of an mRNA vaccine**.
+**mRNAワクチンのGとCの文字の比率を上げることで、mRNAワクチンの有効性を向上することができることが知られています**。
 
-Now, if that was all there was to it, this could be the end of this page.
-"The algorithm is change codons so we get more G and C in there". But then
-we meet the 9th codon which changes `CCA` to `CCU`.
+さて、これが全てなのだとしたら、「アルゴリズムによってGとCが増えるようにする」ということで、このページはここで終わりですが、9番目のコドンを見ると `CCA` が `CCU` に変更されています。
 
-Throughout the ~4000 characters of the vaccine, this happens many times.
+約4千文字のワクチン中に、この変更は何度も現れています。
 
 Our challenge
 -------------
