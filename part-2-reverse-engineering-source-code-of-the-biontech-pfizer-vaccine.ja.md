@@ -25,39 +25,33 @@ images:
 
 ですので、もしワクチン研究を手助けしたいのなら、ぜひ以降を読んでみてください！
 
-The leader board
+順位表
 ----------------
-Here are the current best entrants to the optimization algorithm:
+以下は、最適化アルゴリズムの、上位参加者です（訳注：この日本語訳は最新の順位表ではない可能性が高いため注意）：
 
 <table>
-<tr><th>Name</th><th>Score</th><th>Author</th><th>Comment</th></tr>
+<tr><th>名前</th><th>スコア</th><th>作者</th><th>コメント</th></tr>
 <tr><td><a
 href="https://gist.github.com/naomiajacobs/1e9de466ead8f362394cdfd581ec74fd#gistcomment-3578742">dnachisel</a></td><td>90.9%</td><td><a
 href="https://twitter.com/pvieito">Pedro José Pereira Vieito</a></td><td><a
-href="https://edinburgh-genome-foundry.github.io/DnaChisel/">DNAChisel
-algorithm</a> </td></tr>
+href="https://edinburgh-genome-foundry.github.io/DnaChisel/">DNAChiselアルゴリズム</a> </td></tr>
 <tr><td><a
 href="https://gist.github.com/naomiajacobs/1e9de466ead8f362394cdfd581ec74fd">dnachisel</a></td><td>79.5%</td><td><a
 href="https://twitter.com/naomicodes">Naomi Jacobs</a></td><td><a
-href="https://edinburgh-genome-foundry.github.io/DnaChisel/">DNAChisel
-algorithm</a> </td></tr>
+href="https://edinburgh-genome-foundry.github.io/DnaChisel/">DNAChiselアルゴリズム</a> </td></tr>
 <tr><td><a
 href="https://gist.github.com/sanxiyn/fddd1f18074076fb47e04733e6b62865">most-frequent.py</a></td><td>78.3%</td><td><a
-href="https://twitter.com/sanxiyn">Seo Sanghyeon</a></td><td>Codon frequency
-optimization using python_codon_tables</td></tr>
+href="https://twitter.com/sanxiyn">Seo Sanghyeon</a></td><td>python_codon_tablesに基づくコドン頻度最適化</td></tr>
 <tr><td><a
 href="https://github.com/unrelatedlabs/bnt162b2/blob/master/reverse.ipynb">3rd-cg.py</a></td><td>60.8%</td><td><a
-href="https://twitter.com/pkuhar">Peter Kuhar</a></td><td>If third position is already 'G' or 'C', no change. Otherwise
-replace third position by a C, if protein still matches, done. Otherwise try a G.</td></tr>
+href="https://twitter.com/pkuhar">Peter Kuhar</a></td><td>3文字目がGかCならば何もしない。そうでない場合にCに置き換えて、タンパク質がマッチするなら C を、そうでないなら更に G を試す。</td></tr>
 <tr><td><a
 href="https://github.com/berthubert/bnt162b2/blob/master/3rd-gc.go">3rd-gc.go</a></td><td>53.1%</td><td>bert
-hubert</td><td>If third position is already 'G' or 'C', no change. Otherwise
-replace third position by a G, if protein still matches, done. Otherwise try a C.</td></tr>
-<tr><td>Nop</td><td>27.6%</td><td></td><td>Does not do any optimization at all</td></tr>
+hubert</td><td>3文字目がGかCならば何もしない。そうでない場合にCに置き換えて、タンパク質がマッチするなら G を、そうでないなら更に C を試す。</td></tr>
+<tr><td>Nop</td><td>27.6%</td><td></td><td>最適化を何も行わない</td></tr>
 </table>
 
-Please send updates to bert@hubertnet.nl or
-[@PowerDNS_Bert](https://twitter.com/PowerDNS_Bert).
+エントリーや更新は bert@hubertnet.nl もしくは [@PowerDNS_Bert](https://twitter.com/PowerDNS_Bert) まで。
 
 
 BioNTech
