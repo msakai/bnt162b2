@@ -3,7 +3,7 @@ title: "Reverse Engineering Source Code of the Biontech Pfizer Vaccine: Part 2"
 date: 2020-12-31T12:22:03+01:00
 draft: false
 images:
- - dna-codon-table.png
+ - https://berthub.eu/articles/dna-codon-table.png
 ---
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@powerdns_bert">
