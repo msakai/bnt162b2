@@ -12,26 +12,18 @@ images:
 <meta name="twitter:description" content="In short: the vaccine mRNA has been optimized by changing bits of RNA from (say) `UUU` to `UUC`, and people would like to understand how. This challenge is quite close to what cryptologists and reverse engineering people encounter regularly. On this page, you'll find all the details you need to get cracking to reverse engineer just HOW the vaccine has been optimized.">
 <meta name="twitter:image" content="https://berthub.eu/articles/dna-codon-table.png">
 
-All BNT162b2 vaccine data on this page is sourced from this [World Health
-Organization
-document](https://mednet-communities.net/inn/db/media/docs/11889.doc).
+このページの BNT162b2 ワクチンに関するデータの出典は [世界保健機関（WHO）のドキュメント](https://mednet-communities.net/inn/db/media/docs/11889.doc) です。
 
-> This is a living page, shared already so people can get going! But
-> check back frequently for updates.
+> このページは、取り掛かることが出来るように共有済みではあるものの、更新されます。
+> ときどき更新を確認してみてください。
 
-In short: the vaccine mRNA has been optimized by the manufacturer by
-changing bits of RNA from (say) `UUU` to `UUC`, and people would like to
-understand the logic behind these changes.  This challenge is quite close to what
-cryptologists and reverse engineering people encounter regularly.  On this
-page, you'll find all the details you need to get cracking to reverse
-engineer just HOW the vaccine has been optimized.
+要約: mRNAワクチンは、RNAの一部を例えば `UUU` から `UUC` に置き換えるなどの最適化が行われていて、人々はその背後に存在するロジックを理解したいと思っています。
+このチャレンジは暗号やリバースエンジニアリングの分野で出くわす問題にそっくりです。
+このページではワクチンがどのように最適化されたかリバースエンジニアリングするのに必要な詳細のすべてを説明します。
 
-I thought this would just be a fun puzzle, but I have just been informed that
-figuring out the optimization procedure & documenting it is tremendously
-important for researchers around the world, as this would help them design
-code for proteins and vaccines.
+これはただの楽しいパズルと思っていましたが、最適化手法を明らかにしてそれをドキュメントすることは、世界中の研究者にとって、タンパク質やワクチンのコードを設計するために役立つので、途方もなく重要だという指摘がありました。
 
-So, if you want to help vaccine research, do read on!
+ですので、もしワクチン研究を手助けしたいのなら、ぜひ以降を読んでみてください！
 
 The leader board
 ----------------
