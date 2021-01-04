@@ -141,21 +141,18 @@ abspos,codonOrig,codonVaccine
 に用意してあります。
 [可視化した表](https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables#Standard_DNA_codon_table)もあります。
 
-A sample algorithm
+サンプルアルゴリズム
 ------------------
-On the [GitHub repository](https://github.com/berthubert/bnt162b2) you can
-find
-[3rd-gc.gp](https://github.com/berthubert/bnt162b2/blob/master/3rd-gc.go). 
+[GitHubレポジトリ](https://github.com/berthubert/bnt162b2)に、[3rd-gc.go](https://github.com/berthubert/bnt162b2/blob/master/3rd-gc.go)というファイルを用意してあります。
 
-This implements a simple strategy that works like this:
+これは以下のような単純な戦略を実装しています:
 
- * If a virus codon already ended on G or C, copy it to the vaccine mRNA
- * If not, replace last nucleotide in codon by a G, see if the amino acid
-   still matches, if so, copy to the vaccine mRNA
- * Try the same with a C
- * Otherwise copy as is
+ * ウイルスのコドンが G もしくは C で終わっていたら、それをそのままワクチンのmRNAにコピーします
+ * そうでなかったら、最後のヌクレオチドを G に置き換え、アミノ酸が同じままであれば、それをワクチンにのmRNAにコピーします
+ * G の代わりに C で同じことを試みます
+ * それ以外の場合には元のコドンをそのままコピーします
 
-Or in `golang`:
+`golang` で書けば以下の通り:
 
 ```
 // base case, don't do anything
@@ -183,16 +180,13 @@ if(vir[2] == 'G' || vir[2] =='C') {
 }
 ```
 
-This achieves a rather poor 53.1% match with the BioNTech RNA vaccine, but
-it is a start.
+結果はBioNTechのRNAワクチンと53.1%のマッチと、あまり良くない結果ですが、これは出発点です。
 
-When you design your algorithm, be sure to only base your choices on the
-virus RNA. Do not peak into the BioNTech RNA!
+自分自身でアルゴリズムを設計する際には、ウイルスのRNAだけの情報を用いて、ワクチンのRNAの情報を参照しないようにしてください。
 
-If you have achieved a score beyond 53.1% please email a link to your code
-to bert@hubertnet.nl (or [@PowerDNS_Bert](https://twitter.com/PowerDNS_Bert)
-and I'll put it on the leader board at the top of this page!
- 
+53.1%以上のスコアを達成できたら、コードへのリンクを bert@hubertnet.nl (もしくは [@PowerDNS_Bert](https://twitter.com/PowerDNS_Bert)　に連絡してください。
+そうしたら、このページ上部の順位表に載せますので。
+
 
 Things that will help
 ---------------------
