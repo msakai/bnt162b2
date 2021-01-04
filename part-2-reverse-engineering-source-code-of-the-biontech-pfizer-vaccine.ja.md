@@ -188,56 +188,42 @@ if(vir[2] == 'G' || vir[2] =='C') {
 そうしたら、このページ上部の順位表に載せますので。
 
 
-Things that will help
+参考情報
 ---------------------
-As with every form of reverse engineering or cryptanalysis, it helps to
-understand what we are looking at.
+リバースエンジニアリングや暗号解読では常にそうですが、人々が何に注目しているかを理解することは役立ちます。
 
-GC ratio
+GC比率
 --------
-We know that one goal of the 'codon optimization' is to get more `C`s and
-`G`s into the vaccine version of the RNA. However, there is also a limit to
-that. In DNA, which is also used to manufacture the vaccine, `G` and `C`
-bind together strongly, to the point that if you put too many of these
-'nucleotides' in there, the DNA will no longer be replicated efficiently. 
+「コドン最適化」のゴールは、ワクチンRNA中の `C` と `G` を増やすことでした。
+ですが、それには制限があります。
+ワクチンの製造に使うDNAでは、 `G` と `C` は強く結合するので、それらの「ヌクレオチド」を増やしすぎると、DNAは効率的に複製できなくなってしまうのです。
 
-So some modifications may actually happen to manage *down* the GC percentage of a
-stretch of DNA if it was getting too high.
+そのため、DNA中のGとCの比率が高くなりすぎる箇所では、実際にはGとCの比率を*下げる*ような変更を行うかも知れません。
 
-I [tweeted about this](https://twitter.com/PowerDNS_Bert/status/1344036143961169920) earlier.
+[関連ツイート](https://twitter.com/PowerDNS_Bert/status/1344036143961169920)。
 
-Codon optimization
+コドン最適化
 ------------------
-Some codons are rare in human DNA, or in certain cells. It may be that some
-codons are replaced by other ones simply because they are more frequently
-used by some cells. 
+コドンの一部は人間のDNAもしくは特定の細胞ではまれです。
+それらの細胞でよく使われているという理由で置き換えられたコドンもあるかも知れません。
 
-I [tweeted about this](https://twitter.com/PowerDNS_Bert/status/1344400081802448897)
-earlier.
+[関連ツイート](https://twitter.com/PowerDNS_Bert/status/1344400081802448897)。
 
-RNA folding
+RNA畳み込み
 -----------
-We've been looking at codons up to here. The RNA itself however does not
-know about codons, there are no markers that say where a codon begins and
-ends. The first codon on a protein however is always ATG (or AUG in RNA). 
+ここまでコドンに注目してきましたが、RNAにはコドンを区切るマーカーなどはないので、RNAそれ自体がコドンを認識しているわけではありません。
+しかし、タンパク質の最初のコドンだけは常にATGです（これはDNAの場合で、RNAの場合にはAUG）。
 
-RNA curls up into a shape. This shape might help evade the immune system or
-it might improve translation into amino acids. This only depends on the
-sequence of RNA nucleotides and not on specific codons.
+RNAは丸まって特定の形状になります。
+その形状によって、免疫系の目を逃れたり、アミノ酸への翻訳効率を上げることが出来るかも知れません。
+この形状はRNAのヌクレオチドの列にのみ依存し、特定のコドンには依存しません。
 
-You can submit RNA sequences to [this server of the Institute for
-Theoretical Chemistry at the University of
-Vienna](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi) and it
-will fold RNA for you.  This is a very advanced server that does meticulous
-calculations.
+[ウィーン大学の理論化学部(the Institute for Theoretical Chemistry at the University of Vienna)のサーバ](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)にRNAの列を投稿することで、RNAの畳み込み結果を確認することが出来ます。
+これは精密な計算を行う非常に高度なサーバです。
 
-This [Wikipedia
-page](https://en.wikipedia.org/wiki/Nucleic_acid_structure_prediction)
-describes how this works.
+この[Wikipediaページ](https://en.wikipedia.org/wiki/Nucleic_acid_structure_prediction)に仕組みの説明があります。
 
-It may be that some optimizations improve folding.
+畳み込みを改善するためのための最適化もあるかも知れません。
 
-I am also told that this paper by Moderna (another mRNA vaccine
-manufacturer) may be relevant:
-[mRNA structure regulates protein expression through changes in functional
-half-life](https://www.pnas.org/content/116/48/24075).
+（別のmRNAワクチンの製造者である）モデルナによるこの論文が関係しているかも知れません: 
+[mRNA structure regulates protein expression through changes in functional half-life](https://www.pnas.org/content/116/48/24075)。
