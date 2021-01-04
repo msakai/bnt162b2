@@ -111,24 +111,19 @@ RNAは文字 A, T, G, U からなる（文字通りの）文字列です。
 
 約4千文字のワクチン中に、この変更は何度も現れています。
 
-Our challenge
+挑戦求む
 -------------
-The goal is: find an algorithm that modifies the 'wild type' RNA code into
-the BNT162b2 one. Because everyone would like to understand how to turn
-viral RNA into an effective vaccine. The algorithm does not need to
-reproduce the _exact_ RNA code of course, but it would be super nice if it
-came up with something very similar, while also being brief.
+ゴール: 「野生」の（ウイルスの）RNAコードをBNT162b2のRNAコードに変換するアルゴリズムを見つけよ。
+というのも、誰もがウイルスのRNAを有効なワクチンに変換したいと思っているので。
+アルゴリズムは_厳密に同じ_RNAコードを再現する必要はないものの、ワクチンのコードに似たコードを生成できつつ、また簡潔であるのが望ましいです。
 
-To help you, I have provided the data in a number of forms, as described on
-[the GitHub page](https://github.com/berthubert/bnt162b2).
+お役に立てるように、[このGitHubページ](https://github.com/berthubert/bnt162b2)で説明するように、データを様々な形で準備してあります。
 
-> Note that in these files the `U` mentioned above appears as a `T`. `U` and
-> `T` are the RNA and DNA manifestations of the same information. 
+> 注意：これらのファイルでは上記で `U` で表していた部分が `T` になっています。
+> `U` と `T` はDNAとRNAで同じ情報を表現したものです。
 
-The easiest place to start might be the
-'[side-by-side.csv](https://github.com/berthubert/bnt162b2/blob/master/side-by-side.csv)'
-file. This lists the original and modified version of each codon, side by
-side:
+'[side-by-side.csv](https://github.com/berthubert/bnt162b2/blob/master/side-by-side.csv)' から始めるのが良いかも知れません。
+このファイルは元のRNAと変更されたRNAをコドン単位で比較したものになっています:
 
 ```
 abspos,codonOrig,codonVaccine
@@ -141,11 +136,10 @@ abspos,codonOrig,codonVaccine
 3819,TAA,TGA
 ```
 
-There is also an equivalency table that shows wich codons can be
-interchanged without changing the amino acid output. Please find this in
-[codon-table-grouped.csv](https://github.com/berthubert/bnt162b2/blob/master/codon-table-grouped.csv).
-There is also a visual version
-[here](https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables#Standard_DNA_codon_table).
+生成するアミノ酸を変化させることなく置き換えられる同値なコドンの表も
+[codon-table-grouped.csv](https://github.com/berthubert/bnt162b2/blob/master/codon-table-grouped.csv)
+に用意してあります。
+[可視化した表](https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables#Standard_DNA_codon_table)もあります。
 
 A sample algorithm
 ------------------
