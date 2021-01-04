@@ -218,7 +218,7 @@ RNAは丸まって特定の形状になります。
 その形状によって、免疫系の目を逃れたり、アミノ酸への翻訳効率を上げることが出来るかも知れません。
 この形状はRNAのヌクレオチドの列にのみ依存し、特定のコドンには依存しません。
 
-[ウィーン大学の理論化学部(the Institute for Theoretical Chemistry at the University of Vienna)のサーバ](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)にRNAの列を投稿することで、RNAの畳み込み結果を確認することが出来ます。
+[ウィーン大学理論化学研究所のサーバ](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)にRNAの列を投稿することで、RNAの畳み込み結果を確認することが出来ます。
 これは精密な計算を行う非常に高度なサーバです。
 
 この[Wikipediaページ](https://en.wikipedia.org/wiki/Nucleic_acid_structure_prediction)に仕組みの説明があります。
