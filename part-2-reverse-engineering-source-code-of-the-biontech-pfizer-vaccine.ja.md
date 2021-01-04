@@ -56,19 +56,14 @@ hubert</td><td>3文字目がGかCならば何もしない。そうでない場�
 
 BioNTech
 --------
-We should all be very grateful that BioNTech has shared this data with us. 
-And of course we should also be grateful to the many many researchers and
-lab workers that worked for decades to bring the state of the art to the
-point that such a vaccine could be developed.  It is marvelous.
+このデータを共有してくれたBioNTechに感謝する。
+また、このようなワクチンが開発できるような最先端の技術を実現するために、数十年に渡って携わってきた非常に多くの研究者・研究員の方々にも感謝します。
+これは驚くべき仕事です。
 
-Because it is so marvelous, I want to understand everything about the
-vaccine. I wrote a page [Reverse Engineering the source code of the BioNTech/Pfizer SARS-CoV-2
-Vaccine](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/)
-that describes in some detail what is in the mRNA of the vaccine. It helps
-to read this page before continuing, I promise you it will be interesting.
+あまりにも素晴らしいので、このワクチンのすべてを理解したくなり、それでワクチンのmRNAがどうなっっているかをザックリ説明する「[BioNTechとファイザーのSARS-CoV-2ワクチンのソースコードのリバースエンジニアリング](https://msakai.github.io/bnt162b2/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine.ja/)」（原文：[Reverse Engineering the source code of the BioNTech/Pfizer SARS-CoV-2 Vaccine](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/)）という記事を書きました。
+記事の内容が面白いことは請け合いますので、以降を読み進める前にこの記事を読んでおくことをオススメします。
 
-The post left open some questions however, and this is where it gets
-fascinating. 
+この記事では幾つか疑問が残っていましたが、それこそが面白く、以降で取り上げる点です。
 
 The codon optimization
 ----------------------
