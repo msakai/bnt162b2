@@ -1,5 +1,5 @@
 ---
-title: "Reverse Engineering Source Code of the Biontech Pfizer Vaccine: Part 2"
+title: "BioNTechとファイザーのSARS-CoV-2ワクチンのソースコードのリバースエンジニアリング: パート２"
 date: 2020-12-31T12:22:03+01:00
 draft: false
 images:
@@ -8,8 +8,8 @@ images:
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@powerdns_bert">
 <meta name="twitter:creator" content="@powerdns_bert">
-<meta name="twitter:title" content="Reverse Engineering the source code of the BioNTech/Pfizer SARS-CoV-2 Vaccine: Part 2">
-<meta name="twitter:description" content="In short: the vaccine mRNA has been optimized by changing bits of RNA from (say) `UUU` to `UUC`, and people would like to understand how. This challenge is quite close to what cryptologists and reverse engineering people encounter regularly. On this page, you'll find all the details you need to get cracking to reverse engineer just HOW the vaccine has been optimized.">
+<meta name="twitter:title" content="BioNTechとファイザーのSARS-CoV-2ワクチンのソースコードのリバースエンジニアリング: パート２">
+<meta name="twitter:description" content="要約: mRNAワクチンは、RNAの一部を例えば `UUU` から `UUC` に置き換えるなどの最適化が行われていて、人々はその背後に存在するロジックを理解したいと思っています。このチャレンジは暗号やリバースエンジニアリングの分野で出くわす問題にそっくりです。このページではワクチンがどのように最適化されたかリバースエンジニアリングするのに必要な詳細のすべてを説明します。">
 <meta name="twitter:image" content="https://berthub.eu/articles/dna-codon-table.png">
 
 このページの BNT162b2 ワクチンに関するデータの出典は [世界保健機関（WHO）のドキュメント](https://mednet-communities.net/inn/db/media/docs/11889.doc) です。
