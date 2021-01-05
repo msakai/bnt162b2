@@ -12,7 +12,7 @@
       <pubDate>Thu, 31 Dec 2020 12:22:03 +0100</pubDate>
       
       <guid>https://msakai.github.io/bnt162b2/part-2-reverse-engineering-source-code-of-the-biontech-pfizer-vaccine.ja/</guid>
-      <description>この記事は bert hubert 氏による記事 Reverse Engineering Source Code of the Biontech Pfizer Vaccine の日本語訳です。
+      <description>この記事は bert hubert 氏による記事 Reverse Engineering Source Code of the Biontech Pfizer Vaccine: Part 2 の日本語訳です。
 このページの BNT162b2 ワクチンに関するデータの出典は 世界保健機関（WHO）のドキュメント です。
  このページは、読者が問題に取り組むことが出来るように既に公開済みではあるものの、更新を予定しています。 ときどき更新を確認してみてください。
  他言語版: English (original version) / Français
@@ -20,7 +20,7 @@
 これはただの楽しいパズルと思っていましたが、最適化手法を明らかにしてそれを文章化することは、世界中の研究者がタンパク質やワクチンのコードを設計するために役立つので、途方もなく重要だという指摘がありました。
 ですので、もしワクチン研究を手助けしたいのなら、ぜひ以降を読んでみてください！
 順位表 以下は、最適化アルゴリズムの、上位参加者です（訳注：この日本語訳は最新の順位表ではない可能性が高いため注意。最新の順位表は元のポストを参照）：
- 名前スコア作者コメント dnachisel90.9%Pedro José Pereira VieitoDNAChiselアルゴリズム  dnachisel79.5%Naomi JacobsDNAChiselアルゴリズム  most-frequent.py78.3%Seo Sanghyeonpython_codon_tablesに基づくコドン頻度最適化 3rd-cg.py60.8%Peter Kuhar3文字目がGかCならば何もしない。そうでない場合にCに置き換えて、タンパク質がマッチするなら C を、そうでないなら更に G を試す。 3rd-gc.go53.1%bert hubert3文字目がGかCならば何もしない。そうでない場合にCに置き換えて、タンパク質がマッチするなら G を、そうでないなら更に C を試す。 Nop27.6%最適化を何も行わない  エントリーや更新は bert@hubertnet.nl もしくは @PowerDNS_Bert まで。</description>
+ 名前スコア作者コメント dnachisel90.9%Pedro José Pereira VieitoDNAChiselアルゴリズム  dnachisel79.5%Naomi JacobsDNAChiselアルゴリズム  most-frequent.py78.3%Seo Sanghyeonpython_codon_tablesに基づくコドン頻度最適化 3rd-cg.py60.8%Peter Kuhar3文字目がGかCならば何もしない。そうでない場合にCに置き換えて、タンパク質がマッチするなら C を、そうでないなら更に G を試す。 3rd-gc.go53.1%bert hubert3文字目がGかCならば何もしない。そうでない場合にCに置き換えて、タンパク質がマッチするなら G を、そうでないなら更に C を試す。 Nop27.6%最適化を何も行わない  エントリーや更新は bert@hubertnet.</description>
     </item>
     
     <item>
