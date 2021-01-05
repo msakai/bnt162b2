@@ -12,7 +12,7 @@ images:
 <meta name="twitter:description" content="要約: mRNAワクチンは、RNAの一部を例えば `UUU` から `UUC` に置き換えるなどの最適化が行われていて、人々はその背後に存在するロジックを理解したいと思っています。このチャレンジは暗号やリバースエンジニアリングの分野で出くわす問題にそっくりです。このページではワクチンがどのように最適化されたかリバースエンジニアリングするのに必要な詳細のすべてを説明します。">
 <meta name="twitter:image" content="https://berthub.eu/articles/dna-codon-table.png">
 
-*この記事は bert hubert 氏による記事 [Reverse Engineering Source Code of the Biontech Pfizer Vaccine](https://berthub.eu/articles/posts/part-2-reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/) の日本語訳です。*
+*この記事は bert hubert 氏による記事 [Reverse Engineering Source Code of the Biontech Pfizer Vaccine: Part 2](https://berthub.eu/articles/posts/part-2-reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/) の日本語訳です。*
 
 このページの BNT162b2 ワクチンに関するデータの出典は [世界保健機関（WHO）のドキュメント](https://mednet-communities.net/inn/db/media/docs/11889.doc) です。
 
