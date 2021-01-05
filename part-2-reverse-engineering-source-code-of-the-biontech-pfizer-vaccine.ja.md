@@ -19,6 +19,9 @@ images:
 > このページは、読者が問題に取り組むことが出来るように既に公開済みではあるものの、更新を予定しています。
 > ときどき更新を確認してみてください。
 
+**他言語版**: [English (original version)](https://berthub.eu/articles/posts/part-2-reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/)
+/ [Français](https://renaudguerin.net/posts/partie-2-explorons-le-code-source-du-vaccin-biontech-pfizer/)
+
 要約: mRNAワクチンでは、RNAの一部を例えば `UUU` から `UUC` に置き換えるなどの最適化が行われていて、人々はその背後に存在するロジックを理解したいと思っています。
 このチャレンジは暗号やリバースエンジニアリングの分野で出くわす問題にそっくりです。
 このページではワクチンがどのように最適化されたかリバースエンジニアリングするのに必要な詳細のすべてを説明します。
